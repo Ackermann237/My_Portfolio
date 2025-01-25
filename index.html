@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Inclusion des fichiers CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="home" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="link active">Menu</a>
+            <a href="#about" class="link">À propos</a>
+            <a href="#services" class="link">Services</a>
+            <a href="#skills" class="link">Compétences</a>
+            <a href="#portfolio-section" class="link">Mes Projets</a>
+            <a href="#contact" class="link">Contact</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+        document.getElementById('close-about-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('more-about-section').style.display = 'none'; // Cache la section
+});
+    </script>
+    
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>Hello It's me</h1>
+            <h2>Amougou André</h2>
+            <h3>Je suis <span class="text"></span></h3>
+            <br>
+            <p>
+                Je suis un Développeur avec 03 ans d'expérience<br> à Campus France.
+                <br>Je crée des applications mobiles et des sites web responsive.
+            </p>
+            <div class="home-wc1">
+                <a href="https://www.facebook.com/kebel.nani.9" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://github.com/Ackermann237/" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://wa.me/237659686322" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/andre-amougou-77aa36338" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+    
+            <a href="#" class="btn-box" id="more-about-btn">MORE ABOUT ME</a>
+        </div>
+    
+        <!-- Bloc à afficher pour "More About Me" -->
+        <div class="more-about" id="more-about-section">
+            <h3>Expériences Professionnelles</h3>
+            <p>
+                • Technicien réseau et sécurité à l'Institut Français du Cameroun (IFC) Yaoundé, Cameroon (août 2023 - novembre 2023).<br>
+                • Stagiaire en Administration Systèmes et Réseaux à System Security Network (SSN) Sarl Yaoundé, Cameroon (août 2024 - novembre 2024).
+            </p>
+            <h3>Compétences</h3>
+            <p>
+                • Configuration et administration de réseaux LAN/WAN.<br>
+                • Surveillance et optimisation des performances réseau via des outils de monitoring (Nagios, Zabbix).<br>
+                • Bonne maîtrise des environnements Linux (Debian, Ubuntu) et Windows Server.<br>
+                • Gestion des utilisateurs, des permissions et des services (Active Directory).
+            </p>
+            <h3>Informatique</h3>
+            <p>
+                • Développeur Web (HTML, CSS, PHP, Python, Django).<br>
+                • Développeur d'application mobile (Java, C, Angular, Bootstrap).
+            </p>
+            <a href="#" class="btn-close" id="close-about-btn">Close</a>
+        </div>
+    </section>
+    
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="../resources/Futuristic Neon Blue And Pink Light Instagram Profile Picture (2).png" alt="Profile Image">
+        </div>
+        
+        <div class="about-text">
+            <h2>A Propos de<span>Moi</span></h2>
+            <h4>Full Stack Développeur Web & Mobile</h4>
+            <p>
+                Bonjour, je m'appelle Amougou André Désiré J., un développeur Fullstack passionné par la création de solutions numériques innovantes. 
+                Je suis spécialisé dans le développement de sites web et d'applications mobiles, maîtrisant des technologies telles que HTML, CSS, JavaScript et PHP pour concevoir 
+                des sites web dynamiques et modernes, Node.js et React pour des projets web interactifs, MySQL pour gérer efficacement les bases de données, 
+                ainsi que React Native pour le développement d'applications mobiles performantes et multiplateformes.
+                Avec un esprit curieux et une volonté d'apprendre, je suis toujours prêt à relever de nouveaux défis pour transformer des idées en solutions numériques fonctionnelles et esthétiques.
+            </p>
+            <a href="#" class="btn-box" id="more-about-btn-2">More About Me</a>
+        </div>
+    
+        <!-- Bloc de détail qui s'affiche sur le clic -->
+        <div class="more-about" id="more-about-section-2">
+            <h3>Expériences Professionnelles</h3>
+            <ul>
+                <li>• <strong>Technicien réseau et sécurité</strong> à l'Institut Français du Cameroun (IFC) Yaoundé, Cameroun (août 2023 - novembre 2023)</li>
+                <li>• <strong>Stagiaire en Administration Systèmes et Réseaux</strong> à System Security Network (SSN) Sarl Yaoundé, Cameroun (août 2024 - novembre 2024)</li>
+            </ul>
+    
+            <h3>Compétences</h3>
+            <ul>
+                <li>• <strong>Développement Web</strong> : HTML, CSS, JavaScript, PHP, Node.js, React</li>
+                <li>• <strong>Développement Mobile</strong> : React Native, Android, iOS</li>
+                <li>• <strong>Gestion de bases de données</strong> : MySQL, MongoDB</li>
+                <li>• <strong>Réseau et Sécurité</strong> : Configuration et gestion des réseaux LAN/WAN, Monitoring, Sécurisation des infrastructures</li>
+            </ul>
+    
+            <h3>Formation</h3>
+            <p>
+                • <strong>Licence en Informatique</strong> à l'Université de Yaoundé I<br>
+                • <strong>Certificat en Développement Web et Mobile</strong> à Campus France
+            </p>
+    
+            <a href="#" class="btn-close" id="close-about-btn-2">Close</a>
+        </div>
+    </section>
+    
+    
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h2 class="sub-title">Mes<span>Services</span></h2>
+                <div class="services-list">
+                    <!-- UI/UX Design -->
+                    <div class="service-item">
+                        <i class='bx bxl-sketch' style='color:#43e6ea'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Je suis un développeur Fullstack passionné par la création de solutions numériques innovantes...</p>
+                        <a href="#" class="row" id="more-about-btn-1">More learn</a>
+                        
+                        <!-- Détails supplémentaires cachés -->
+                        <div class="more-about" id="more-about-section-1">
+                            <p>Je suis Amougou André Désiré J., un développeur Fullstack passionné par la création de solutions numériques innovantes, spécialisé en développement web, mobile, ainsi qu'en UI/UX Design. Maîtrisant des outils comme Figma, je conçois des interfaces modernes et intuitives, visant à offrir une expérience utilisateur fluide et engageante. Mon approche, centrée sur l'utilisateur, me permet de transformer des idées en produits numériques fonctionnels et de grande valeur.</p>
+                            <a href="#" class="btn-close" id="close-about-btn-1">Close</a>
+                        </div>
+                    </div>
+    
+                    <!-- Gestion de bases de données -->
+                    <div class="service-item">
+                        <i class='bx bxl-postgresql' style='color:#43e6ea'></i>
+                        <h2>Gestion de bases de données</h2>
+                        <p>Je suis un développeur passionné par la gestion des bases de données et la programmation. J'utilise régulièrement PostgreSQL et MySQL pour la gestion et l'organisation des données...</p>
+                        <a href="#" class="row" id="more-about-btn-2">More learn</a>
+                        
+                        <!-- Détails supplémentaires cachés -->
+                        <div class="more-about" id="more-about-section-2">
+                            <p>Je maîtrise PostgreSQL et MySQL pour la gestion des données...</p>
+                            <a href="#" class="btn-close" id="close-about-btn-2">Close</a>
+                        </div>
+                    </div>
+    
+                    <!-- Développeur web et mobile Fullstack -->
+                    <div class="service-item">
+                        <i class='bx bx-code-alt' style='color:#43e6ea'></i>
+                        <h2>Développeur web et mobile Fullstack</h2>
+                        <p>Je suis spécialisé dans le développement de sites web et d'applications mobiles...</p>
+                        <a href="#" class="row" id="more-about-btn-3">More learn</a>
+                        
+                        <!-- Détails supplémentaires cachés -->
+                        <div class="more-about" id="more-about-section-3">
+                            <p>Bonjour, je m'appelle Amougou André Désiré J., un développeur Fullstack passionné par la création de solutions numériques innovantes. Je suis spécialisé dans le développement de sites web et d'applications mobiles, maîtrisant des technologies telles que HTML, CSS, JavaScript et PHP pour concevoir des sites web dynamiques et modernes, Node.js et React pour des projets web interactifs, MySQL pour gérer efficacement les bases de données, ainsi que React Native pour le développement d'applications mobiles performantes et multiplateformes.</p>
+                            <a href="#" class="btn-close" id="close-about-btn-3">Close</a>
+                        </div>
+                    </div>
+    
+                    <!-- Réseau et sécurité -->
+                    <div class="service-item">
+                        <i class='bx bx-signal-5' style='color:#43e6ea'></i>
+                        <h2>Réseau et sécurité</h2>
+                        <p>Je suis compétent dans la configuration et la gestion des réseaux...</p>
+                        <a href="#" class="row" id="more-about-btn-4">More learn</a>
+                        
+                        <!-- Détails supplémentaires cachés -->
+                        <div class="more-about" id="more-about-section-4">
+                            <p>Je suis également compétent dans le domaine des réseaux, où je configure et gère des architectures LAN et VLAN pour optimiser les performances et la sécurité des réseaux. J'ai une solide expérience dans le routage dynamique entre les routeurs, ce qui permet d'assurer une connectivité fluide et fiable. Je configure également des services essentiels tels que le DHCP pour l'attribution dynamique d'adresses IP, le DNS pour la résolution de noms de domaine, ainsi que des solutions de messagerie pour assurer une communication efficace au sein du réseau. Ces compétences me permettent de concevoir et maintenir des réseaux performants, sécurisés et bien structurés pour soutenir les applications et les services de l'entreprise.</p>
+                            <a href="#" class="btn-close" id="close-about-btn-4">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    
+    
+    <h1 class="sub-title">Mes <span>Compétences</span></h1>
+    <section>
+        <!-- Section des compétences techniques -->
+        <div class="container1" id="skills">
+            <h1 class="heading1">Compétences Techniques</h1>
+            <div class="technical-bars">
+                <!-- Barre HTML -->
+                <div class="bar">
+                    <i class='bx bxl-html5' style='color:#7b4f41'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span data-value="70%"></span>
+                    </div>
+                </div>
+                <!-- Barre CSS -->
+                <div class="bar">
+                    <i class='bx bxl-css3' style='color:#0f4863'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span data-value="83%"></span>
+                    </div>
+                </div>
+                <!-- Barre Python -->
+                <div class="bar">
+                    <i class='bx bxl-python' style='color:#237d52'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line Python">
+                        <span data-value="60%"></span>
+                    </div>
+                </div>
+                <!-- Barre React-native -->
+                <div class="bar">
+                    <i class='bx bxl-react' style='color:#43e6ea'></i>
+                    <div class="info">
+                        <span>React-native</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span data-value="90%"></span>
+                    </div>
+                </div>
+                <!-- Barre PHP -->
+                <div class="bar">
+                    <i class='bx bxl-php' style='color:#705682'></i>
+                    <div class="info">
+                        <span>PHP</span>
+                    </div>
+                    <div class="progress-line php">
+                        <span data-value="75%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Section des compétences professionnelles -->
+        <div>
+            <h1 class="heading1">Compétences Professionnelles</h1>
+            <div class="container2">
+                <div class="radial-bar" style="--percent: 90;">
+                    <svg>
+                        <circle class="progress-bar" cx="50%" cy="50%" r="45"></circle>
+                        <circle class="path" cx="50%" cy="50%" r="45"></circle>
+                    </svg>
+                    <div class="poucentage">90%</div>
+                    <div class="label">Créativité</div>
+                </div>
+                <div class="radial-bar" style="--percent: 80;">
+                    <svg>
+                        <circle class="progress-bar" cx="50%" cy="50%" r="45"></circle>
+                        <circle class="path" cx="50%" cy="50%" r="45"></circle>
+                    </svg>
+                    <div class="poucentage">80%</div>
+                    <div class="label">Communication</div>
+                </div>
+                <div class="radial-bar" style="--percent: 75;">
+                    <svg>
+                        <circle class="progress-bar" cx="50%" cy="50%" r="45"></circle>
+                        <circle class="path" cx="50%" cy="50%" r="45"></circle>
+                    </svg>
+                    <div class="poucentage">75%</div>
+                    <div class="label">Résolution des problèmes</div>
+                </div>
+                <div class="radial-bar" style="--percent: 70;">
+                    <svg>
+                        <circle class="progress-bar" cx="50%" cy="50%" r="45"></circle>
+                        <circle class="path" cx="50%" cy="50%" r="45"></circle>
+                    </svg>
+                    <div class="poucentage">70%</div>
+                    <div class="label">Travail en équipe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <h1 class="sub-title">Mes derniers <span>Projets</span></h1>
+ 
+    <section id="portfolio-section">
+        <div class="main-text">
+            <h1>Mes Projets :</h1>
+        </div>
+        <div class="portfolio-content">
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <img src="../resources/Capture d'écran 2025-01-24 221730.png" alt="Projet UI/UX">
+                <div class="project-details">
+                    <h1>UI/UX</h1>
+                    <p>
+                        Création d'interfaces utilisateur de jeux vidéo ergonomiques et intuitives. Le but était d'améliorer l'expérience des joueurs en rendant l'interface claire et engageante, tout en optimisant la navigation.
+                    </p>
+                    <a href="#" class="line-externe" id="more-info-btn-1">En savoir plus</a>
+                    
+                    <!-- Détails supplémentaires cachés -->
+                    <div class="more-info" id="more-info-section-1">
+                        <p>Ce projet impliquait la conception de maquettes et prototypes interactifs en utilisant Figma et Sketch. L'objectif était de rendre l'interface fluide et agréable, avec une attention particulière sur la réactivité et la vitesse de chargement.</p>
+                        <a href="#" class="btn-close" id="close-info-btn-1">Close</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <img src="../resources/télécharger.jpeg" alt="Développement e-commerce">
+                <div class="project-details">
+                    <h1>Développement e-commerce</h1>
+                    <p>
+                        Conception d'une plateforme de commerce en ligne moderne et performante. Cette plateforme permet une navigation facile et une gestion simplifiée des commandes.
+                    </p>
+                    <a href="#" class="line-externe" id="more-info-btn-2">En savoir plus</a>
+                    
+                    <!-- Détails supplémentaires cachés -->
+                    <div class="more-info" id="more-info-section-2">
+                        <p>J'ai utilisé des technologies modernes telles que React et Node.js pour rendre l'application rapide et évolutive. Des outils comme Stripe ont été intégrés pour le traitement des paiements en ligne en toute sécurité.</p>
+                        <a href="#" class="btn-close" id="close-info-btn-2">Close</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <img src="../resources/télécharger (2).jpeg" alt="Clone WhatsApp">
+                <div class="project-details">
+                    <h1>Clone WhatsApp</h1>
+                    <p>
+                        Développement d'une application mobile de messagerie inspirée de WhatsApp. Ce projet visait à reproduire l'interface et les fonctionnalités essentielles de WhatsApp, comme les appels vidéo, les messages instantanés et la gestion des contacts.
+                    </p>
+                    <a href="#" class="line-externe" id="more-info-btn-3">En savoir plus</a>
+                    
+                    <!-- Détails supplémentaires cachés -->
+                    <div class="more-info" id="more-info-section-3">
+                        <p>J'ai utilisé React Native pour développer cette application mobile multi-plateforme. Les notifications push, la gestion des messages en temps réel avec Firebase, et la sécurité des données étaient des priorités majeures du projet.</p>
+                        <a href="#" class="btn-close" id="close-info-btn-3">Close</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <img src="../resources/OIP (1).jpeg" alt="Site web les Flamants Rose">
+                <div class="project-details">
+                    <h1>Site web les Flamants Rose</h1>
+                    <p>
+                        Développement d'un site web de logement pour gérer les réservations, inscriptions et paiements des clients sur la plateforme. Ce projet incluait la gestion des disponibilités et des interactions avec les utilisateurs.
+                    </p>
+                    <a href="#" class="line-externe" id="more-info-btn-4">En savoir plus</a>
+                    
+                    <!-- Détails supplémentaires cachés -->
+                    <div class="more-info" id="more-info-section-4">
+                        <p>Ce site utilise PHP et MySQL pour gérer les réservations et l'administration des clients. Il inclut des fonctionnalités de paiement en ligne sécurisées et une interface utilisateur responsive, permettant une expérience fluide sur tous les appareils.</p>
+                        <a href="#" class="btn-close" id="close-info-btn-4">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      <section class="contact" id="contact">
+        <div class="contact-text">
+          <h1>Contactez<span> Moi</span></h1>
+          <h4>Travaillons Ensemble</h4>
+          <p>
+            Je suis à votre disposition 24h/24 et 7j/7 pour travailler sur n'importe quel projet, 
+            y compris des projets liés à la data et à l'intelligence artificielle.
+          </p>
+          <ul class="contact-list">
+            <li><i class="bx bx-send"></i> amougouandre05@gmail.com</li>
+            <li><i class="bx bx-phone"></i> 659686322</li>
+          </ul>
+          <div class="home-wc1">
+            <a href="https://www.facebook.com/kebel.nani.9"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="https://www.linkedin.com/in/andre-amougou-77aa36338"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="https://wa.me/237659686322"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://github.com/Ackermann237/"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+          
+              <!-- Clé d'accès Web3Forms -->
+              <input type="hidden" name="access_key" value="1a7a2b79-2251-4e1f-b5d1-a5b4f0844a1d">
+          
+              <!-- Champs de saisie avec attributs 'name' obligatoires -->
+              <input type="text" name="name" placeholder="Entrez votre nom" required>
+              <input type="email" name="email" placeholder="Entrez votre email" required>
+              <textarea name="message" placeholder="Entrez votre message" rows="6" required></textarea>
+          
+              <!-- Bouton d'envoi -->
+              <input type="submit" value="Envoyer" class="send">
+            </form>
+          </div>          
+        </div>
+      </section>
+      <div class="footer">
+        <div class="last-text">
+          <p>Développé avec ❤️ par <strong>AMOUGOU André Désiré Junior</strong> &copy; 2025</p>
+        </div>
+        <a href="#" class="top" aria-label="Retour en haut">
+          <i class='bx bx-up-arrow-alt'></i>
+        </a>
+      </div>
+      
+    <script src="index.js"></script>
+    
+</body>
+</html>
